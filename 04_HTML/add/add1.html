@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>add1</title>
+</head>
+<body>
+    <img src="Icon-Python.svg" width="200" title="Icon Python" alt="Icon Python" align="right">
+    <h1 align = "center">HOW-TO: Программа на Python, Часть 1</h1>
+    <ul>
+        <li><em><a href="add1.html">Программа на Python — часть 1</a></em></li>
+        <li><em><a href="add2.html">Программа на Python — часть 2</a></em></li>
+        <li><em><a href="add3.html">Программа на Python — часть 3</a></em></li>
+    </ul>
+    <h2 id="cont">Содержание</h2>
+    <h3>HOW-TO: Программа на Python, Часть 1</h3>
+    <ul>
+        <li><a href="#t1">Наша первая программа</a></li>
+        <li><a href="#t2">Пример цикла For</a></li>
+    </ul>
+    <div>Из множества существующих языков программирования Python — один из самых лёгких
+    в изучении. Он создан в конце 80-х годов XX века, но с тех пор он сильно изменился.
+    Хотя Python входит в состав большинства дистрибутивов Linux, на него часто не
+    обращают внимания при выборе языка для изучения. В этой статье мы рассмотрим
+    создание консольных приложений, а в следующей — программирование графических
+    интерфейсов <ins>(GUI)</ins>. Давайте создадим простую программу прямо сейчас.</div>
+    <h2 id="t1">Наша первая программа</h2>
+    <div>Наберём код в текстовом редакторе (например, в <b>gedit</b>). Потом мы разберёмся, что делает
+    каждая строка и пойдём дальше.</div>
+    <br>
+    <a href="#cont">К содержанию</a>
+    <br>
+    <br>
+    <div>Введите эти 4 строки:</div>
+    <br>
+    <code>#!/usr/bin/env python<br>
+        print 'Hello. I am a python program.'<br>
+        name = raw_input("What is your name?")<br>
+        print "Hello there, " + name + "!"
+    </code>
+    <br>
+    <br>
+    <div>Это всё. Сохраните файл как <strong>hello.py</strong> в любом месте. Я предлагаю сохранить его в папке
+    <strong>python_examples</strong> в домашнем каталоге. Этот пример показывает, как просто написать
+    программу на Python. Для запуска программы нужно сделать её файл исполняемым. Для
+    этого введите в терминале</div>
+    <br>
+    <div><strong><kbd><em><ins>chmod +x hello.py</ins></em></kbd></strong></div>
+    <br>
+    <div>в папке, в которой вы сохранили программу. Теперь запустите её.</div>
+    <br>
+    <code>greg@earth:~/python_examples$ ./hello.py<br>
+        Hello. I am a python program.<br>
+        What is your name? Ferd Burphel<br>
+        Hello there, Ferd Burphel!<br>
+        greg@earth:~/python_examples$
+    </code>
+    <br>
+    <br>
+    <div>Вот и всё.</div>
+    <h2 id="t2">Пример цикла For</h2>
+    <a href="#cont">К содержанию</a>
+    <br>
+    <br>
+    <div>Теперь давайте рассмотрим пример программирования цикла. Запустите текстовый
+        редактор и наберите следующую программу:</div>
+    <br>
+    <pre>#!/usr/bin/env python
+    for cntr in range(0,10):
+    print cntr</pre>     
+    <div><em>Не забудьте поставить символ табуляции перед строкой «print cntr»</em>. Это важно. В
+        Python для указания на блоки кода используются не круглые «(» и фигурные «{» скобки
+        как в других языках программирования, а отступы.</div>
+    <br>
+    <table width=100%>
+        <tr>
+            <td align="left"> <a href="#">
+                <svg width="100" height="94" xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                     <title>previous</title>
+                     <rect fill="#fff" id="canvas_background" height="96" width="103" y="-1" x="-1"/>
+                    </g>
+                    <g>
+                     <title>previous</title>
+                     <path transform="rotate(179.87136840820312 50.476184844970696,46.90151596069335) " stroke="#6D97AB" id="svg_1" d="m46.02349,74.94025l15.5302,-17.31804l-30.02689,0l-30.02682,0l0,-10.72069l0,-10.7207l29.68235,0c16.32527,0 29.68233,-0.54338 29.68233,-1.2075c0,-0.66411 -6.49904,-8.45723 -14.44229,-17.31803l-14.44234,-16.11055l13.34913,0l13.34909,0l20.38708,22.70011l20.38707,22.7001l-20.42618,22.65667l-20.42617,22.65667l-14.05339,0l-14.05342,0l15.53025,-17.31804l0.00001,0z" fill-opacity="null" stroke-opacity="null" stroke-width="3" fill="#84D3DB"/>
+                    </g>
+                   </svg>
+            </a></td>
+            <td align="center"><a href="#cont">
+                <svg width="100" height="94" xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                     <title>home</title>
+                     <rect fill="#fff" id="canvas_background" height="97" width="103" y="-1" x="-1"/>
+                    </g>
+                    <g>
+                     <title>home</title>
+                     <path stroke="#6D97AB" id="svg_2" d="m99.26421,47.27485l-12.6716,-11.86612l0,-28.33996l-10.86315,0l0,18.16734l-25.34735,-23.73612l-48.88211,45.77486l11.63702,-0.25964l0,46.27865l73.97288,0l0,-46.01901l12.15431,0zm-48.8821,39.40003l-24.13896,0l0,-27.127l24.13896,0l0,27.127zm23.45199,-11.62586l-15.86227,0l0,-15.6639l15.86227,0l0,15.6639z" fill-opacity="null" stroke-opacity="null" stroke-width="3" fill="#84D3DB"/>
+                    </g>
+                   </svg>
+            </a></td>
+            <td align="right"><a href="add2.html">
+                <svg width="100" height="94" xmlns="http://www.w3.org/2000/svg">
+                    <g>
+                     <title>next</title>
+                     <rect fill="#fff" id="canvas_background" height="96" width="103" y="-1" x="-1"/>
+                    </g>
+                    <g>
+                     <title>next</title>
+                     <path stroke="#6D97AB" id="svg_1" d="m46.02351,74.8955l15.5302,-17.31804l-30.02689,0l-30.02682,0l0,-10.72069l0,-10.7207l29.68235,0c16.32527,0 29.68233,-0.54338 29.68233,-1.2075c0,-0.66411 -6.49904,-8.45723 -14.44229,-17.31803l-14.44234,-16.11055l13.34913,0l13.34909,0l20.38708,22.70011l20.38707,22.7001l-20.42618,22.65667l-20.42617,22.65667l-14.05339,0l-14.05342,0l15.53025,-17.31804l0.00001,0z" fill-opacity="null" stroke-opacity="null" stroke-width="3" fill="#84D3DB"/>
+                    </g>
+                   </svg>
+            </a></td>
+        </tr>
+    </table>
+    </body>
+</html>
