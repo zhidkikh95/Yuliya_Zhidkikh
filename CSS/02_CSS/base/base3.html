@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>base3</title>
+    <style>
+        .wrap{
+            width: 100%;
+            background-color: rgb(238, 239, 239);
+        }
+        .navigation{
+            width: 15em;
+            background-color: rgb(205, 205, 205);
+            float: left;
+        }
+        .article1{
+            padding-top: 10px;
+            background-color: rgb(171,172,172);
+            margin-bottom: 0.2em;
+        }
+
+        .article2{
+            padding-top: 10px;
+            background-color: rgb(171,172,172);
+            margin-bottom: 0.2em;
+            margin-left: 15em;
+        }
+        .bottom{
+            background-color: rgb(205, 205, 205);
+            clear: both;
+        }
+        .img{
+            display: block;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+    <div class="navigation">
+        <h3>Блок навигации</h3>
+        <ul>
+            <li>Ширина 15em</li>
+            <li> Должен присутствать цвет фона</li>
+            <li>Располагается слева</li>
+            <li>Блок навигации наполните контентонм достаточным, чтобы по высоте он начинал захватывать вторую статью, как показано но данном примере</li>
+        </ul>
+    </div>
+    <div class="article1">
+        <h3>Статья 1</h3>
+        Размер блока:<br>
+        Занимает всю доступную ширину<br>
+        Должен присутствать цвет фона<br>
+        Во всех "статях" сделайте отступ снизу от соседей равным 2em, при помощи свойства margin-bottom
+    </div>
+    <div class="article2">
+        <h3>Статья 2</h3>
+        Размер блока:<br>
+        Занимает всю доступную ширину<br>
+        Должен присутствать цвет фона<br>
+        Во всех "статях" сделайте отступ снизу от соседей равным 2 em, при помощи совйства margin-bottom.
+        Картинка вставлена при помощи тега, плавание организовано по праваму краю внутри даной статьи для этой картинки.<br>
+        <div class="img"><img src="email.png" alt=""></div>
+    </div>
+    </div>
+    <div class="bottom">
+        Нижний блок занимает всю доступную ширину. Высота определяется помещенным внутрь контентом.
+    </div>
+</body>
+</html>
