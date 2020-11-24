@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>add2</title>
+    <style>
+    .wrap{
+        background: rgb(238, 239, 239);
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row;
+    }
+    .navigation{
+        width: 15em;
+        min-width: 15em;
+        background: rgb(205, 205, 205);
+    }
+    .articles{
+        display: flex;
+        flex-direction: column;
+        background: rgb(171,172,172);
+    }  
+    .article1{
+        border-bottom-width: 0.2em;
+        border-bottom-style: solid;
+        border-color:  rgb(238, 239, 239);
+    }
+    .article2{
+        border-bottom-width: 0.2em;
+        border-bottom-style: solid;
+        border-color:  rgb(238, 239, 239);
+    }
+    .img{
+        display: flex;
+        justify-content: flex-end;
+    }
+    .bottom{
+        background: rgb(205, 205, 205);
+    }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="navigation">
+            <h3>Блок навигации</h3>
+            <ul>
+                <li>Ширина 15em</li>
+                <li> Должен присутствать цвет фона</li>
+                <li>Располагается слева</li>
+                <li>Блок навигации наполните контентонм достаточным, чтобы по высоте он начинал захватывать вторую статью, как показано но данном примере</li>
+            </ul>
+        </div>
+        <div class="articles">
+        <div class="article1">
+            <h3>Статья 1</h3>
+            Размер блока:<br>
+            Занимает всю доступную ширину<br>
+            Должен присутствать цвет фона<br>
+            Во всех "статях" сделайте отступ снизу от соседей равным 0.2em, при помощи свойства margin-bottom
+        </div>
+        <div class="article2">
+            <h3>Статья 2</h3>
+            Размер блока:<br>
+            Занимает всю доступную ширину<br>
+            Должен присутствать цвет фона<br>
+            Во всех "статях" сделайте отступ снизу от соседей равным 0.2 em, при помощи совйства margin-bottom.
+            Картинка вставлена при помощи тега, плавание организовано по праваму краю внутри даной статьи для этой картинки.<br>
+            <div class="img"><img src="../base/email.png" alt=""></div>
+        </div>
+        </div>
+        </div>
+        <div class="bottom">
+            Нижний блок занимает всю доступную ширину. Высота определяется помещенным внутрь контентом.
+        </div>
+</body>
+</html>
