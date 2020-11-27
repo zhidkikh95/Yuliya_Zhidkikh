@@ -1,0 +1,29 @@
+div.dni > div {background-color: rgb(212,212,212);
+    border: solid black 1px; color: rgb(129,129,129);
+    border-radius:3px; position: relative;
+    cursor: pointer; width:130px;
+    height:25px;
+    line-height: 25px;
+    float:left
+    }
+div.eda > div {background-color: rgb(212,212,212);
+    border: solid black 1px;
+    color: rgb(129,129,129);
+    border-radius:3px;
+    cursor: pointer;
+    height:0;
+    overflow:hidden;
+    opacity: 0;
+    line-height: 25px;
+    width: 130px;
+    -webkit-transition: height 0.4s, opacity 0.4s ease-in;
+    -o-transition: height 0.4s, opacity 0.4s ease-in;
+    -moz-transition: height 0.4s, opacity 0.4s ease-in;
+    transition: height 0.4s, opacity 0.4s ease-in;
+    }
+div.dni > div:hover div.eda>div {height:25px; opacity:1}
+div.dni > div:hover {background-color: rgb(129,129,129); color: rgb(212,212,212)}
+@media all and (max-width:814px) {
+    div.dni > div {float:none}
+    div.dni > div:hover div.eda>div {height:25px; opacity:1} div.eda {position:absolute; left: 100%; top: 0}
+}
