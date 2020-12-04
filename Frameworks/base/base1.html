@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>base1</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ==" crossorigin="anonymous" />
+    <style>
+        p {
+            text-align: justify;
+        }
+        h1{
+            font-size: 40px;
+        }
+        h2{
+            font-size: 30px;
+        }
+        h2 > a{
+            font-size: medium;
+        }
+        a{
+            font-size: smaller;
+            text-decoration: none;
+        }
+        li{
+            line-height: normal;
+        }
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="row">
+      <div class="twelve columns"><h1>HOW-TO: Программа на Python, Часть 1</h1></div>
+    </div>
+    <div class="row">
+      <div class="three columns">
+          <ul>
+            <li><a href="base1.html">Программа на Python — часть 1</a></li>
+            <li><a href="base2.html">Программа на Python — часть 2</a></li>
+            <li><a href="base3.html">Программа на Python — часть 3</a></li>
+            </ul>
+        </div>
+      <div class="nine columns">
+            <p>
+            Из множества существующих языков программирования Python — один из самых лёгких
+            в изучении. Он создан в конце 80-х годов XX века, но с тех пор он сильно изменился.
+            Хотя Python входит в состав большинства дистрибутивов Linux, на него часто не
+            обращают внимания при выборе языка для изучения. В этой статье мы рассмотрим
+            создание консольных приложений, а в следующей — программирование графических
+            интерфейсов <ins>(GUI)</ins>. Давайте создадим простую программу прямо сейчас.</p>
+        </div>
+    </div>
+    <div class="row">
+      <div class="three columns"><h2 id="cont">Содержание</h2></div>
+      <div class="nine columns"><h2 id="t1">Наша первая программа <a href="#cont">К содержанию</a></h2></div>
+    </div>
+    <div class="row">
+        <div class="three columns">
+            <ul>
+                <li><a href="#t1">Наша первая программа</a></li>
+                <li><a href="#t2">Пример цикла For</a></li>
+            </ul>
+        </div>
+        <div class="nine columns    ">
+        <p>Наберём код в текстовом редакторе (например, в <b>gedit</b>). Потом мы разберёмся, что делает
+        каждая строка и пойдём дальше.</p>
+        <p>Введите эти 4 строки:</p>
+        <pre><code>#!/usr/bin/env python
+        print 'Hello. I am a python program.'
+        name = raw_input("What is your name?")
+        print "Hello there, " + name + "!"</code></pre>
+        <p>Это всё. Сохраните файл как <strong>hello.py</strong> в любом месте. Я предлагаю сохранить его в папке
+        <strong>python_example</strong>s в домашнем каталоге. Этот пример показывает, как просто написать
+        программу на Python. Для запуска программы нужно сделать её файл исполняемым. Для
+        этого введите в терминале</p>
+        <p><strong><kbd><em><ins>chmod +x hello.py</ins></em></kbd></strong></p>
+        <p>в папке, в которой вы сохранили программу. Теперь запустите её.</p>
+        <pre><code>
+        greg@earth:~/python_examples$ ./hello.py
+        Hello. I am a python program.
+        What is your name? Ferd Burphel
+        Hello there, Ferd Burphel!
+        greg@earth:~/python_examples$</code></pre>
+        <p>Вот и всё.</p>
+        <h2 id="t2">Пример цикла For <a href="#cont">К содержанию</a> </h2>
+        <p>Теперь давайте рассмотрим пример программирования цикла. Запустите текстовый
+        редактор и наберите следующую программу:</p>
+        <pre><code>#!/usr/bin/env python
+        for cntr in range(0,10):
+        print cntr</code></pre> 
+        <p><em>Не забудьте поставить символ табуляции перед строкой «print cntr»</em>. Это важно. В
+            Python для указания на блоки кода используются не круглые «(» и фигурные «{» скобки
+            как в других языках программирования, а отступы.</p>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

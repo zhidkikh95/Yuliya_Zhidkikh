@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>base2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.min.css" integrity="sha512-EZLkOqwILORob+p0BXZc+Vm3RgJBOe1Iq/0fiI7r/wJgzOFZMlsqTa29UEl6v6U6gsV4uIpsNZoV32YZqrCRCQ==" crossorigin="anonymous" />
+    <style>
+        p {
+            text-align: justify;
+        }
+        h1{
+            font-size: 40px;
+        }
+        h2{
+            font-size: 30px;
+        }
+        h2 > a{
+            font-size: medium;
+        }
+        h3 {
+            font-size: 20px;
+        }
+        a{
+            font-size: smaller;
+            text-decoration: none;
+        }
+        li{
+            line-height: normal;
+        }
+    </style>
+</head>
+<body>
+        <div class="container">
+            <div class="row">
+                <div class="twelve columns"><h1>HOW-TO: Программа на Python, Часть 2</h1></div>
+            </div>
+            <div class="row">
+                <div class="three columns">                    
+                    <ul>
+                        <li><a href="base1.html">Программа на Python — часть 1</a></li>
+                        <li><a href="base2.html">Программа на Python — часть 2</a></li>
+                        <li><a href="base3.html">Программа на Python — часть 3</a></li>
+                    </ul></div>
+                <div class="nine columns">
+                    <p>В прошлом уроке мы рассмотрели простую программу, которая использовала raw_input
+                        для получения ответа пользователя, простые типы переменных и простой цикл <strong>«for»</strong>. В
+                        этом уроке мы рассмотрим ещё больше типов переменных и напишем ещё больше
+                        программ.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="three columns"><h2 id="cont">Содержание</h2></div>
+                <div class="nine columns"> <h2 id="t1">Списки <a href="#cont">К содержанию</a></h2></div>
+            </div>
+            <div class="row">
+                <div class="three columns"><h3>HOW-TO: Программа на Python, Часть 2</h3>
+                    <ul>
+                     <li><a href="#t1">Списки</a></li>
+                     <li><a href="#t2">Комментарии</a></li>
+                 </ul></div>
+                <div class="nine columns">
+                    <p>Давайте рассмотрим другой тип переменных, который называется <em>списки</em>. В других
+                        языках программирования они называются <em>массивами</em>. Если мы обратимся к аналогии с
+                        коробками для обуви, то массив (список) представляет собой несколько склеенных друг с
+                        другом коробок с одинаковыми вещами. Например, в одной коробке лежат вилки, в
+                        другой — ножи, в третьей — ложки. Посмотрим на простой список— список месяцев. Мы
+                        запрограммируем его так:</p>
+                        <code>months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']</code>
+    <br><br>
+    <div>Чтобы создать список, мы заключили все значения в квадратные скобки (<strong>'['</strong> и <strong>']'</strong>). Мы
+        назвали наш список '<em>months</em>'. Чтобы использовать список, мы дадим команду print
+        <strong>months[0]</strong> или <strong>months[1]</strong> (которые выведут на экран '<em>Jan</em>' или '<em>Feb</em>'). Помните: счет
+        начинается с нуля. Чтобы найти длину списка, можно использовать такую функцию:
+    </div>
+    <br>
+    <code>print len(months)</code>
+    <br><br>
+    <p>которая вернёт 12.</p>
+    <div>Ещё один пример списков — категории в поваренной книге. Например...
+    </div>
+    <br>
+    <code>categories = ['Main dish','Meat','Fish','Soup','Cookies']
+    </code>
+    <br>
+    <br>
+    <div>Таким образом, в <strong>categories[0]</strong> хранится <em>'Main dish'</em>, а в <strong>categories[4]</strong> — '<em>Cookies</em>'. Всё
+        очень просто. Я уверен, вы сможете придумать много других примеров использования
+        списков.</div>
+        <br>
+    <h2 id="t2">Комментарии <a href="#cont">К содержанию</a></h2>
+    <p>Далее, мы должны обсудить комментарии. Комментарии важны по нескольким причинам.
+        Они не только говорят вам или другим людям, что вы пытаетесь делать, но и напомнят
+        вам через полгода, что же вы хотели сделать. Когда вы будете писать много программ,
+        комментарии станут важными. Также при их помощи вы заставите Python игнорировать
+        какие-либо части кода. Чтобы закомментировать строку, поставьте перед ней знак '#'.
+        Например:</p>
+    <p>#</p> 
+    <p>Это комментарий</p>
+    <p>Комментарии можно вставлять в любое место в строке, но помните, что Python
+        проигнорирует всё, что идёт после '#'.</p>
+
+                </div>
+            </div>
+        </div>
+</body>
+</html>
